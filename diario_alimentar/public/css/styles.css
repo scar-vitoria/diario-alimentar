@@ -1,0 +1,146 @@
+.titulo{
+    color: #16940b;
+    font-family: "Vibes", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+.titulo2{
+    text-align: center;
+    margin-top: 1em;
+}
+
+/*menu welcome icon */
+li{
+    list-style-type: none;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-menu{
+    max-width: 5%;
+}
+
+.titulo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .container-menu {
+        flex-direction: column;
+    }
+
+    .titulo-container {
+        order: -1;
+        width: 100%;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Container das refeições */
+.img_ref {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 15px;
+}
+
+.dados {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin: 0;
+    font-size: 1em;
+}
+.position-relative {
+    position: relative;
+}
+
+
+/*Container refeição*/
+.conteiner-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container-item{
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px -22px black;
+    margin-left: 20px;   
+}
+
+.btn {
+    border-radius: 10px;
+    max-width: 20%;
+    max-height: 80%;
+    transform: translateX(-50%);
+    color: #16940b;
+    box-shadow: 4px 5px 30px -10px black;   
+}
+
+.img_cafe{
+    max-width: 20%;
+}
+
+.desc_ref{
+    margin: 0;
+    font-size: 0.9em;
+    color:#575758;
+    
+}
+
+.container-insert{
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    grid-gap: 30px;
+    align-items: center
+}
+
+.p-insert{
+    text-align: center;
+    
+}
+
+
+.icon-ref{
+    width: 160%;
+    height: auto;
+}
+
+
+.form-create-main{
+    display: flex; 
+    justify-content: center;
+}
+
+

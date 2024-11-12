@@ -1,0 +1,237 @@
+<div id="cards-container" class="row" >
+    <h1 class="titulo2">Alimentação</h1>
+        @foreach ($refeicoes as $refeicao)
+        <div class="container_welcome" >
+            <img src="/img/refeicoes/cafe_da_manha.jpg">
+            <p class="">{{$refeicao->tipo_refeicao}}</p>
+            <p class="">{{$refeicao->descricao}}</p>
+        </div>
+        @endforeach
+
+        <tr>
+            <th>Refeição</th>
+            <th>Alimentos</th>
+        </tr>
+        <tr>
+            <th>Café da manhã</th>
+        </tr>
+        <tr>
+            <th>Almoço</th>
+        </tr>
+        <tr>
+            <th>Lanche da tarde</th>
+        </tr>
+        <tr>
+            <th>Jantar</th>
+        </tr>
+        <tr>
+            <th>Lanches</th>
+        </tr>
+    </table>
+    </div>
+    
+
+
+        
+    
+
+    .img_ref{
+        opacity: 0.6;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .btn{
+        color: white;
+        background-color: #16940b;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .container {
+        text-align: center; /* Centraliza horizontalmente */
+    }
+    
+    .dados {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .position-relative {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+    
+    
+    
+    .text {
+        text-align: center;
+        color: #000000 !important;
+        margin: 0;
+    }
+
+
+    <div class="flex-container">
+        @foreach ($refeicoes as $refeicao)
+        @if($refeicao->tipo_refeicao == "Café da manhã")
+            <div class="row mt-4">
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        .titulo{
+            text-align: center;
+            color: #16940b;
+            font-family: "Vibes", system-ui;
+            font-weight: 400;
+            font-style: normal
+          }
+        
+        .titulo2{
+            text-align: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        
+        /*menu welcome icon */
+        .icon{
+            width: 25%;
+            height: auto;
+        }
+        
+        .menu_icon {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: right;
+            align-items: left;
+        }
+        
+        .img_welcome{
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .p_welcome{
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .p_container{
+            color: #16940b;
+            font-weight: bold;
+        }
+        
+        .container_welcome{
+            text-align: center;
+            max-width:30%;
+            max-height:10%; 
+            width: auto;
+            height: auto;
+        }
+        
+        
+        /* Container das refeições */
+        .img_ref {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            opacity: 0.6;
+            border-radius: 15px;
+        }
+        
+        .dados {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .text {
+            margin: 0;
+            font-size: 1em;
+        }
+        
+        
+        
+        .position-relative {
+            position: relative;
+        }
+        
+        
+        /*Container refeição*/
+        
+        .custom-container {
+            display: inline-block;
+            box-shadow: 0px 0px 45px -30px #7a7a7a;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        
+        .container-item{
+            max-width: 28%;
+        }
+        
+        .btn {
+            border-radius: 10px;
+            max-width: 20%;
+            max-height: 80%;
+            transform: translateX(-50%);
+            color: #16940b;
+            box-shadow: 4px 5px 30px -10px black;
+            
+        }
+        
+        .img_cafe{
+            max-width: 20%;
+        }
+        
+        .desc_ref{
+            margin: 0;
+            font-size: 0.9em;
+            color:#575758;
+        }
+
+        @foreach ($refeicoes as $refeicao)
+        @if($refeicao->tipo_refeicao == "Jantar")
+        <div class="col-12 col-md-3 my-2">
+            <div class="dados">
+                <h4 class="text">{{ $refeicao->tipo_refeicao }}</h4>
+            </div>
+            <div class="position-relative">
+                <img class="w-100 img_ref" src="/img/jantar.jpg" alt="Imagem ilustrativa almoço">
+                <button class="btn btn-success">Ver detalhes</button>
+            </div>
+        </div>
+        @endif
+        @endforeach
+
+        
+        </div>
+
+
+        <div class="container-btn">
+            <div><button class="btn">+</button></div>
+        </div>
+        
+        
+        
