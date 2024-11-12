@@ -1,2 +1,3 @@
 # diario-alimentar
-Sistema web para gerenciamento da alimentação
+Sistema web para gerenciamento das refeições
+
